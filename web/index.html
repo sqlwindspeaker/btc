@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>BTC 自动交易参数设置</title>
+    <link rel="stylesheet" href="css/btc.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="block">
+                <span class="block-title">条件1</span>
+                <span class="criteria">(成交价格p - 5小时均线ma5) / 成交价格p
+                    &lt; 交易阈值(th) </span> 
+                <div class="input-table">
+                    <table>
+                        <tr>
+                            <td><label>交易阈值(th)</label></td>
+                            <td><input type="number"></input></td>
+                        </tr>
+                    </table>
+                    <button class="criteria-submit" id="th-submit">更新参数</button>
+                </div>
+            </div>
+            <div class="block">
+                <span class="block-title">条件2</span>
+                <span class="criteria">成交价格p &gt; 特定价格x</span>
+                <div class="input-table">
+                    <table>
+                        <tr>
+                            <td><label>特定价格(x)</label></td>
+                            <td><input type="number"></input></td>
+                        </tr>
+                    </table>
+                    <button class="criteria-submit" id="price-submit">更新参数</button>
+                </div>
+            </div>
+            <div class="block">
+                <span class="block-title">条件3</span>
+                <span class="criteria">成交价格p &gt; f(t)</span>
+                <div class="input-table">
+                    <table>
+                        <tr>
+                            <td><label>拟合点t1</label></td>
+                            <td><input type="number"></input></td>
+                            <td><label>拟合点x1</label></td>
+                            <td><input type="number"></input></td>
+                        </tr>
+                        <tr>
+                            <td><label>拟合点t2</label></td>
+                            <td><input type="number"></input></td>
+                            <td><label>拟合点x2</label></td>
+                            <td><input type="number"></input></td>
+                        </tr>
+                    </table>
+                    <button class="criteria-submit" id="price-submit">更新参数</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
